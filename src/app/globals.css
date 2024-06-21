@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.nav {
+  z-index: 10;
+}
+
+.image-container {
+  position: relative;
+  z-index: 1;
+}
+
+.image {
+  position: absolute;
+  z-index: 0;
+}
+
+.carregando {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span.carregando{
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 12px solid rgb(184, 184, 196);
+  border-right: 12px solid transparent;
+
+  animation: loading 1s ease-in-out infinite;
+}
+
+@keyframes loading{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.image-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px; /* Ajuste conforme necessário */
+}
