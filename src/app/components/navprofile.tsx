@@ -44,7 +44,7 @@ const NavProfile = () => {
         },
       });
 
-      console.log(response.data);
+      
       handleLogout(); // Faz logout após deletar a conta com sucesso
 
     } catch (error: any) {
