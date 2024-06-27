@@ -20,7 +20,6 @@ export async function POST(req, res) {
     if (!email || !name || !message) {
       return NextResponse.json({ error: "Campos de entrada ausentes." }, 400);
     }
-    console.log(email, name, message);
 
     const emailData = {
       from: email,
