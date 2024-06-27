@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-basic-routes-response",
+  "name": "next-typescript-zustand-response",
   "version": "0.1.0",
   "author": "Jhonny Guimarães",
   "license": "reserved jguimaraesdev",
@@ -7,7 +7,7 @@
   "homepage": "https://codedevsocials.netlify.app/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jguimaraesdev/nextjs-basic-routes-response"
+    "url": "https://github.com/jguimaraesdev/next-typescript-zustand-response"
   },
   "private": true,
   "scripts": {
