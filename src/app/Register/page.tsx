@@ -44,9 +44,9 @@ const Register: React.FC = () => {
         },
       });
 
-      console.log(result); // Log input data for debugging
+     
       const data = response.data;
-      console.log(data); // Log response data for debugging
+      
 
       if (data.error) {
         setError('Server error: ' + data.error);
