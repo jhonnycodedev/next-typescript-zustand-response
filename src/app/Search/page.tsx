@@ -34,7 +34,7 @@ const Search: React.FC = () => {
 
     try {
       const response = await axios.get(url);
-      console.log("search aqui", response);
+      
       if (response.data && response.data.length >= 0) {
         const fetchedProfiles: Profile[] = response.data; // Assume que o array de perfis está diretamente no response.data
         const fetchedTotalPages: number = response.data.totalPages || 1; // Supondo que totalPages está no response.data
